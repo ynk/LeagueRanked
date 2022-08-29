@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_main"
+    app:startDestination="@id/playerOverviewFragment">
+
+    <fragment
+        android:id="@+id/playerOverviewFragment"
+        android:name="com.ynk.leagueranked.fragments.PlayerOverviewFragment"
+        android:label="PlayerOverviewFragment" >
+        <action
+            android:id="@+id/action_playerOverviewFragment_to_playerDetailFragment"
+            app:destination="@id/playerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerDetailFragment"
+        android:name="com.ynk.leagueranked.fragments.PlayerDetailFragment"
+        android:label="PlayerDetailFragment" >
+        <argument android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>
