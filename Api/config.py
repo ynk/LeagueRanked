@@ -1,4 +1,5 @@
-api_key = "123" #Set your riot api key here
+from os import environ
+api_key = environ.get("RIOT_API_KEY") #Set your riot api key here
 
 
 champion_names = {
